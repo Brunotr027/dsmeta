@@ -1,16 +1,19 @@
-import NotificationButton from "./compenents/NotificationButton"
+import Header from "./compenents/Header"
+import SalesCard from "./compenents/SalesCard"
 
 function App() {
-  return(
+  return (
     <>
-    <h1>Olá Mundo!</h1>
-    <NotificationButton />
-    <NotificationButton />
-    <NotificationButton />
-    <NotificationButton />
-    <NotificationButton />
+      <Header />
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
+            <SalesCard />
+          </div>
+        </section>
+      </main>
     </>
   )
-  }
+}
 
 export default App
